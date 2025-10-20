@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Video dan Foto Bergerak</title>
+<style>
+/* CSS untuk mengatur tampilan dan animasi */
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.moving-row {
+  display: flex;
+  white-space: nowrap;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* Animasi untuk bergerak ke kanan */
+.moving-row.right {
+  animation-name: moveRight;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Animasi untuk bergerak ke kiri */
+.moving-row.left {
+  animation-name: moveLeft;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.moving-row img {
+  width: 300px;
+  height: 150px;
+  margin: 5px;
+}
+
+/* Style untuk video */
+.video-container {
+  width: 100%; /* Lebar video container menjadi 100% */
+  text-align: center; /* Agar video berada di tengah horizontal */
+  margin-bottom: 20px;
+}
+
+video {
+  max-width: 500%; /* Lebar maksimum video */
+  height: auto;
+}
+</style>
+</head>
+<body>
+
+  <div class="video-container">
+    <video controls autoplay muted loop style="margin: 0 auto; display: block;">
+      <source src="https://files.catbox.moe/w453vk.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="container">
+    <div class="moving-row right">
+      <!-- Ganti dengan path gambar Anda -->
+      <img src="https://files.catbox.moe/co93dr.jpeg" alt="Image 1">
+      <img src="https://files.catbox.moe/654xrp.jpeg" alt="Image 2">
+      <img src="https://files.catbox.moe/rb8zk1.jpeg" alt="Image 3">
+      <img src="https://files.catbox.moe/qrftpn.jpeg" alt="Image 4">
+      <img src="https://files.catbox.moe/jwqr22.jpeg" alt="Image 5">
+      <img src="https://files.catbox.moe/co93dr.jpeg" alt="Image 1">
+      <img src="https://files.catbox.moe/654xrp.jpeg" alt="Image 2">
+      <img src="https://files.catbox.moe/rb8zk1.jpeg" alt="Image 3">
+      <img src="https://files.catbox.moe/qrftpn.jpeg" alt="Image 4">
+      <img src="https://files.catbox.moe/jwqr22.jpeg" alt="Image 5">
+            <img src="https://files.catbox.moe/co93dr.jpeg" alt="Image 1">
+      <img src="https://files.catbox.moe/654xrp.jpeg" alt="Image 2">
+      <img src="https://files.catbox.moe/rb8zk1.jpeg" alt="Image 3">
+      <img src="https://files.catbox.moe/qrftpn.jpeg" alt="Image 4">
+      <img src="https://files.catbox.moe/jwqr22.jpeg" alt="Image 5">
+      <img src="https://files.catbox.moe/co93dr.jpeg" alt="Image 1">
+      <img src="https://files.catbox.moe/654xrp.jpeg" alt="Image 2">
+      <img src="https://files.catbox.moe/rb8zk1.jpeg" alt="Image 3">
+      <img src="https://files.catbox.moe/qrftpn.jpeg" alt="Image 4">
+      <img src="https://files.catbox.moe/jwqr22.jpeg" alt="Image 5">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="moving-row left">
+      <!-- Ganti dengan path gambar Anda -->
+
+      <img src="https://files.catbox.moe/wlss2k.jpeg" alt="Image 6">
+      <img src="https://files.catbox.moe/ijb6bc.jpeg" alt="Image 7">
+      <img src="https://files.catbox.moe/gi4v9m.jpeg" alt="Image 8">
+      <img src="https://files.catbox.moe/dw00tr.jpeg" alt="Image 9">
+      <img src="https://files.catbox.moe/x3pmu0.jpeg" alt="Image 10">
+       <img src="https://files.catbox.moe/wlss2k.jpeg" alt="Image 6">
+      <img src="https://files.catbox.moe/ijb6bc.jpeg" alt="Image 7">
+      <img src="https://files.catbox.moe/gi4v9m.jpeg" alt="Image 8">
+      <img src="https://files.catbox.moe/dw00tr.jpeg" alt="Image 9">
+      <img src="https://files.catbox.moe/x3pmu0.jpeg" alt="Image 10">
+            <img src="https://files.catbox.moe/wlss2k.jpeg" alt="Image 6">
+      <img src="https://files.catbox.moe/ijb6bc.jpeg" alt="Image 7">
+      <img src="https://files.catbox.moe/gi4v9m.jpeg" alt="Image 8">
+      <img src="https://files.catbox.moe/dw00tr.jpeg" alt="Image 9">
+      <img src="https://files.catbox.moe/x3pmu0.jpeg" alt="Image 10">
+       <img src="https://files.catbox.moe/wlss2k.jpeg" alt="Image 6">
+      <img src="https://files.catbox.moe/ijb6bc.jpeg" alt="Image 7">
+      <img src="https://files.catbox.moe/gi4v9m.jpeg" alt="Image 8">
+      <img src="https://files.catbox.moe/dw00tr.jpeg" alt="Image 9">
+      <img src="https://files.catbox.moe/x3pmu0.jpeg" alt="Image 10">
+    </div>
+  </div>
+
+</body>
+</html>
